@@ -1,0 +1,88 @@
+yarn run v1.7.0
+$ node scripts/start.js
+Starting the development server...
+
+Compiled with warnings.
+
+./src/step1.js
+  Line 22:  Unnecessary escape character: \"  no-useless-escape
+  Line 22:  Unnecessary escape character: \"  no-useless-escape
+  Line 22:  Unnecessary escape character: \"  no-useless-escape
+  Line 22:  Unnecessary escape character: \"  no-useless-escape
+
+./src/row.js
+  Line 34:  Expected '===' and instead saw '=='  eqeqeq
+  Line 39:  Expected '===' and instead saw '=='  eqeqeq
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+  Line 89:  Unnecessary escape character: \-     no-useless-escape
+
+./src/App.js
+  Line 5:   'Image' is defined but never used                                                                          no-unused-vars
+  Line 49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[23m[m[30m[47m[H[2J[?25l[23;1H"~/dev/spellathon/src/row.js" 160L, 6254C
+[39;49m[?1l>[?12l[?25h[?1049lVim: Error reading input, exiting...
+Vim: Finished.
+[24;1H[27m[23m[m[30m[47m[39;49m
+Could not open row.js in the editor.
+The editor process exited with an error: (code 1).
+
+To set up the editor integration, add something like REACT_EDITOR=atom to the .env.local file in your project folder and restart the development server. Learn more: https://goo.gl/MMTaZt
+
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[23m[m[30m[47m[H[2J[?25l[23;1H"~/dev/spellathon/src/row.js" 160L, 6254C
+[39;49m[?1l>[?12l[?25h[?1049lVim: Error reading input, exiting...
+Vim: Finished.
+[24;1H[27m[23m[m[30m[47m[39;49m
+Could not open row.js in the editor.
+The editor process exited with an error: (code 1).
+
+To set up the editor integration, add something like REACT_EDITOR=atom to the .env.local file in your project folder and restart the development server. Learn more: https://goo.gl/MMTaZt
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
