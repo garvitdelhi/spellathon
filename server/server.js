@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 
 let store = {};
 
-// use this for the first time when you up the app to init the memcache with empty store
+// use this to reset the data in memcache after server restart. use this with caution as all the data will reset
 //memcached.set('store', JSON.stringify({}), 1000000, () => console.log('done'));
 
 memcached.get('store', (err, data) => {
@@ -31,7 +31,7 @@ memcached.get('store', (err, data) => {
 
 const secure = {};
 
-// use this for the first time when you up the app to init the memcache with empty secure keywords
+// use this to reset the data in memcache after server restart. use this with caution as all the data will reset
 //memcached.set('store', JSON.stringify({}), 1000000, () => console.log('done'));
 
 memcached.get('secure', (err, data) => {
