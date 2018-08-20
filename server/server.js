@@ -21,6 +21,7 @@ app.use(function(req, res, next) {
 
 let store = {};
 
+// use this for the first time when you up the app to init the memcache with empty store
 //memcached.set('store', JSON.stringify({}), 1000000, () => console.log('done'));
 
 memcached.get('store', (err, data) => {
@@ -29,6 +30,14 @@ memcached.get('store', (err, data) => {
 });
 
 const secure = {};
+
+// use this for the first time when you up the app to init the memcache with empty secure keywords
+//memcached.set('store', JSON.stringify({}), 1000000, () => console.log('done'));
+
+memcached.get('secure', (err, data) => {
+    console.log(data, err, 'here');
+    secure = JSON.parse(data);
+});
 
 function getStore(key) {
     return store[key];
@@ -118,6 +127,7 @@ app.post('/step1', (req, res) => {
     console.log('step 1 for: ', hash);
     if (getStore(hash) === undefined) {
         secure[body.email] = md5(body.password);
+        memcached.set('secure', JSON.stringify(secure), 1000000, err => err !== undefined ? console.log(err) : console.log('memcache set'));
         setStore(hash, {
             name: body.name,
             email: body.email,
@@ -126,16 +136,16 @@ app.post('/step1', (req, res) => {
             hash: hash
         });
     }
-    //if (secure[body.email] === md5(body.password)) {
+    if (secure[body.email] === md5(body.password)) {
         res.status(200).json({
             step: getStore(hash).step,
             hash: hash
         });
-    // } else {
-    //  res.json({
-    //       error: 'Wrong Password'
-    //    });
-    //}
+    } else {
+      res.json({
+        error: 'Wrong Password'
+      });
+    }
 });
 
 app.post('/step2', (req, res) => {
